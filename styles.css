@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 100%; /* Full-size logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive button styles */
+@media (max-width: 600px) {
+   .button-container {
+       flex-direction: column; /* Stack buttons vertically */
+   }
+   button {
+       width: 100%; /* Make buttons full width */
+       margin-bottom: 10px; /* Add space between buttons */
+   }
+}
+
+#result {
+   margin-top: 20px;
+}
+
+a.download-link {
+   display: inline-block;
+   margin: 5px 0;
+   padding: 10px;
+   background-color: #28a745; /* Green background for download links */
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+a.download-link:hover {
+   background-color: #218838; /* Darker green on hover */
+}
+
+.download-container {
+   margin-top: 20px;
+}
+
+.thumbnail {
+   width: 100%;
+   height: auto;
+   border-radius: 8px;
+}
+
+/* Description styles */
+.description {
+   margin-top: 30px; 
+}
+
+.description h2,
+.description h3,
+.description h4 {
+   color: #333; 
+}
+
+.description p,
+.description ul,
+.description ol {
+   line-height: 1.6; 
+}
+
+/* Progress Bar Styles */
+#progressBarContainer {
+   width: calc(100% - 20px); /* Make progress bar wider */
+   background-color: #e0e0e0; 
+   border-radius: 5px; 
+   margin-top: 10px; /* Add space above progress bar */
+}
+
+#progressBar {
+   width: 0%;
+   height: 8px; /* Slightly taller progress bar */
+   background-color: #007bff; 
+}
+
+.hidden {
+   display: none; 
+}
+
+/* Progress Text Styles */
+#progressText {
+   text-align: center; 
+   margin-top: 5px; 
+   color: #333; 
+}
+
+/* Other Tools Styles */
+.other-tools {
+   text-align: center; 
+   margin-top: 20px; 
+}
+
+.tool-link {
+   display:inline-block; 
+   margin-right:15px; 
+   padding :10px; 
+   background-color :#17a2b8; /* Teal background for other tools */
+   color:white; 
+   text-decoration:none; 
+   border-radius :5px; 
+   transition :background-color .3s ease; 
+}
+
+/* Responsive other tools button styles */
+@media (max-width :600px) {
+   .tool-link {
+       display:block; /* Stack links vertically on small screens */
+       margin-bottom :10px; /* Space between links */
+       width:auto; /* Allow auto width for better fit */
+   }
+}
+
+.tool-link:hover {
+   background-color :#138496; /* Darker teal on hover */
+}
